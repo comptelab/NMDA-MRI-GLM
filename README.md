@@ -67,3 +67,15 @@ Another option is just to set the participant label to all the target participan
     group = 'C',
     session = '1', 
 ```
+
+## Plotting the results
+Finally, the results from 3rd level can be plotted by using the script 'visualize-results-3rd-level.py' and specifying the wanted group and session. For example for the session 1 of controls this would be:
+```
+group = 'C'
+session = '1'
+```
+The subject-level (2nd level) contrasts can be plotted by using the script 'visualize-results-2nd-level.py' and setting the wanted session and subject. For example, for session 1 of subject C20:
+```
+subject = 'C20'
+session = '1'
+```
