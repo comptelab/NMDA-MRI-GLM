@@ -26,3 +26,8 @@ dcm2bids -d <DCM directory> -p <participantID> -s <sessionID> -c <document.json 
 ```
 docker run --rm -it -e DOCKER_VERSION_8395080871=18.09.2 -v /storage/albamrt/NMDA/MRI/license.txt:/opt/freesurfer/license.txt:ro -v /storage/albamrt/NMDA/MRI/BIDS:/data:ro -v /storage/albamrt/NMDA/MRI/preprocess:/out -v /storage/albamrt/NMDA/MRI/work:/scratch  -u $UID poldracklab/fmriprep:1.4.0 /data /out participant --participant_label C20 -t wm --ignore slicetiming --bold2t1w-dof 6 --no-submm-recon --fs-no-reconall --write-graph -v --output-spaces MNI152NLin6Asym:res-2 --write-graph --n_cpus 15 --omp-nthreads 4 --nthreads 4 --mem-mb 20000 -w /scratch --low-mem
 ```
+## Creating the tsv file
+In order to run the GLM we need a .tsv file with the regressors. We can build this file with the script 'create_tsv.py', that takes the behavior files of the speified subjects in '/archive/albamrt/MRI/behaviour/', converts them to .tsv format and saves them in '/archive/albamrt/NMDA/MRI/BIDS/'.
+
+## GLM
+In order to run the GLM 
