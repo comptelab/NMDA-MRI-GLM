@@ -1,0 +1,269 @@
+{
+    "groups": [
+        {
+            "name": "Group_00001",
+            "procs": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16
+            ],
+            "total": 17
+        }
+    ],
+    "links": [
+        {
+            "source": 0,
+            "target": 7,
+            "value": 1
+        },
+        {
+            "source": 6,
+            "target": 7,
+            "value": 1
+        },
+        {
+            "source": 0,
+            "target": 8,
+            "value": 1
+        },
+        {
+            "source": 7,
+            "target": 8,
+            "value": 1
+        },
+        {
+            "source": 6,
+            "target": 8,
+            "value": 1
+        },
+        {
+            "source": 0,
+            "target": 9,
+            "value": 1
+        },
+        {
+            "source": 8,
+            "target": 9,
+            "value": 1
+        },
+        {
+            "source": 0,
+            "target": 15,
+            "value": 1
+        },
+        {
+            "source": 11,
+            "target": 15,
+            "value": 1
+        },
+        {
+            "source": 0,
+            "target": 14,
+            "value": 1
+        },
+        {
+            "source": 11,
+            "target": 14,
+            "value": 1
+        },
+        {
+            "source": 0,
+            "target": 13,
+            "value": 1
+        },
+        {
+            "source": 11,
+            "target": 13,
+            "value": 1
+        },
+        {
+            "source": 0,
+            "target": 12,
+            "value": 1
+        },
+        {
+            "source": 11,
+            "target": 12,
+            "value": 1
+        },
+        {
+            "source": 9,
+            "target": 16,
+            "value": 1
+        },
+        {
+            "source": 9,
+            "target": 10,
+            "value": 1
+        },
+        {
+            "source": 10,
+            "target": 11,
+            "value": 1
+        },
+        {
+            "source": 0,
+            "target": 3,
+            "value": 1
+        },
+        {
+            "source": 0,
+            "target": 1,
+            "value": 1
+        },
+        {
+            "source": 1,
+            "target": 2,
+            "value": 1
+        },
+        {
+            "source": 3,
+            "target": 4,
+            "value": 1
+        },
+        {
+            "source": 2,
+            "target": 4,
+            "value": 1
+        },
+        {
+            "source": 0,
+            "target": 5,
+            "value": 1
+        },
+        {
+            "source": 3,
+            "target": 5,
+            "value": 1
+        },
+        {
+            "source": 4,
+            "target": 5,
+            "value": 1
+        },
+        {
+            "source": 5,
+            "target": 6,
+            "value": 1
+        }
+    ],
+    "maxN": 17,
+    "nodes": [
+        {
+            "group": 1,
+            "name": "0_datasource",
+            "report": "/tmp/tmphe1dh6mi/wf_1st_level/_sub_C14/datasource/_report/report.rst",
+            "result": "/tmp/tmphe1dh6mi/wf_1st_level/_sub_C14/datasource/result_datasource.pklz"
+        },
+        {
+            "group": 1,
+            "name": "1_mask",
+            "report": "/tmp/tmp3_4oidbz/wf_1st_level/susan_smooth/_sub_C14/mask/_report/report.rst",
+            "result": "/tmp/tmp3_4oidbz/wf_1st_level/susan_smooth/_sub_C14/mask/result_mask.pklz"
+        },
+        {
+            "group": 1,
+            "name": "2_meanfunc2",
+            "report": "/tmp/tmp1syun0gu/wf_1st_level/susan_smooth/_sub_C14/meanfunc2/_report/report.rst",
+            "result": "/tmp/tmp1syun0gu/wf_1st_level/susan_smooth/_sub_C14/meanfunc2/result_meanfunc2.pklz"
+        },
+        {
+            "group": 1,
+            "name": "3_median",
+            "report": "/tmp/tmpb9kyyx43/wf_1st_level/susan_smooth/_sub_C14/median/_report/report.rst",
+            "result": "/tmp/tmpb9kyyx43/wf_1st_level/susan_smooth/_sub_C14/median/result_median.pklz"
+        },
+        {
+            "group": 1,
+            "name": "4_merge",
+            "report": "/tmp/tmp13sv4qpi/wf_1st_level/susan_smooth/_sub_C14/merge/_report/report.rst",
+            "result": "/tmp/tmp13sv4qpi/wf_1st_level/susan_smooth/_sub_C14/merge/result_merge.pklz"
+        },
+        {
+            "group": 1,
+            "name": "5_multi_inputs",
+            "report": "/tmp/tmpqsmknzqc/wf_1st_level/susan_smooth/_sub_C14/multi_inputs/_report/report.rst",
+            "result": "/tmp/tmpqsmknzqc/wf_1st_level/susan_smooth/_sub_C14/multi_inputs/result_multi_inputs.pklz"
+        },
+        {
+            "group": 1,
+            "name": "6_smooth",
+            "report": "/tmp/tmp7z_ebmr6/wf_1st_level/susan_smooth/_sub_C14/smooth/_report/report.rst",
+            "result": "/tmp/tmp7z_ebmr6/wf_1st_level/susan_smooth/_sub_C14/smooth/result_smooth.pklz"
+        },
+        {
+            "group": 1,
+            "name": "7_runinfo",
+            "report": "/tmp/tmpnkjwoc86/wf_1st_level/_sub_C14/runinfo/_report/report.rst",
+            "result": "/tmp/tmpnkjwoc86/wf_1st_level/_sub_C14/runinfo/result_runinfo.pklz"
+        },
+        {
+            "group": 1,
+            "name": "8_l1_spec",
+            "report": "/tmp/tmpzped6cef/wf_1st_level/_sub_C14/l1_spec/_report/report.rst",
+            "result": "/tmp/tmpzped6cef/wf_1st_level/_sub_C14/l1_spec/result_l1_spec.pklz"
+        },
+        {
+            "group": 1,
+            "name": "9_l1_model",
+            "report": "/tmp/tmpnrzn3u9r/wf_1st_level/_sub_C14/l1_model/_report/report.rst",
+            "result": "/tmp/tmpnrzn3u9r/wf_1st_level/_sub_C14/l1_model/result_l1_model.pklz"
+        },
+        {
+            "group": 1,
+            "name": "10_feat_fit",
+            "report": "/tmp/tmpmgmc9jvp/wf_1st_level/_sub_C14/feat_fit/_report/report.rst",
+            "result": "/tmp/tmpmgmc9jvp/wf_1st_level/_sub_C14/feat_fit/result_feat_fit.pklz"
+        },
+        {
+            "group": 1,
+            "name": "11_feat_select",
+            "report": "/tmp/tmp247s37g6/wf_1st_level/_sub_C14/feat_select/_report/report.rst",
+            "result": "/tmp/tmp247s37g6/wf_1st_level/_sub_C14/feat_select/result_feat_select.pklz"
+        },
+        {
+            "group": 1,
+            "name": "12_ds_tstat",
+            "report": "/tmp/tmp42egllw_/wf_1st_level/_sub_C14/ds_tstat/_report/report.rst",
+            "result": "/tmp/tmp42egllw_/wf_1st_level/_sub_C14/ds_tstat/result_ds_tstat.pklz"
+        },
+        {
+            "group": 1,
+            "name": "13_ds_zstat",
+            "report": "/tmp/tmp8swv7r26/wf_1st_level/_sub_C14/ds_zstat/_report/report.rst",
+            "result": "/tmp/tmp8swv7r26/wf_1st_level/_sub_C14/ds_zstat/result_ds_zstat.pklz"
+        },
+        {
+            "group": 1,
+            "name": "14_ds_varcope",
+            "report": "/tmp/tmp19jxkyx1/wf_1st_level/_sub_C14/ds_varcope/_report/report.rst",
+            "result": "/tmp/tmp19jxkyx1/wf_1st_level/_sub_C14/ds_varcope/result_ds_varcope.pklz"
+        },
+        {
+            "group": 1,
+            "name": "15_ds_cope",
+            "report": "/tmp/tmp0lm8ymmn/wf_1st_level/_sub_C14/ds_cope/_report/report.rst",
+            "result": "/tmp/tmp0lm8ymmn/wf_1st_level/_sub_C14/ds_cope/result_ds_cope.pklz"
+        },
+        {
+            "group": 1,
+            "name": "16_feat_spec",
+            "report": "/tmp/tmpbf8e4698/wf_1st_level/_sub_C14/feat_spec/_report/report.rst",
+            "result": "/tmp/tmpbf8e4698/wf_1st_level/_sub_C14/feat_spec/result_feat_spec.pklz"
+        }
+    ]
+}

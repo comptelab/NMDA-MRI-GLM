@@ -1,0 +1,147 @@
+[
+    {
+        "group": 1,
+        "imports": [],
+        "name": "00_datasource",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "00_datasource"
+        ],
+        "name": "01_mask",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "01_mask"
+        ],
+        "name": "02_meanfunc2",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "00_datasource"
+        ],
+        "name": "03_median",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "03_median",
+            "02_meanfunc2"
+        ],
+        "name": "04_merge",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "00_datasource",
+            "03_median",
+            "04_merge"
+        ],
+        "name": "05_multi_inputs",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "05_multi_inputs"
+        ],
+        "name": "06_smooth",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "00_datasource",
+            "06_smooth"
+        ],
+        "name": "07_runinfo",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "00_datasource",
+            "07_runinfo",
+            "06_smooth"
+        ],
+        "name": "08_l1_spec",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "00_datasource",
+            "08_l1_spec"
+        ],
+        "name": "09_l1_model",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "09_l1_model"
+        ],
+        "name": "10_feat_fit",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "10_feat_fit"
+        ],
+        "name": "11_feat_select",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "00_datasource",
+            "11_feat_select"
+        ],
+        "name": "12_ds_tstat",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "00_datasource",
+            "11_feat_select"
+        ],
+        "name": "13_ds_zstat",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "00_datasource",
+            "11_feat_select"
+        ],
+        "name": "14_ds_varcope",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "00_datasource",
+            "11_feat_select"
+        ],
+        "name": "15_ds_cope",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "09_l1_model"
+        ],
+        "name": "16_feat_spec",
+        "size": 1
+    }
+]
