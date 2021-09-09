@@ -30,4 +30,40 @@ docker run --rm -it -e DOCKER_VERSION_8395080871=18.09.2 -v /storage/albamrt/NMD
 In order to run the GLM we need a .tsv file with the regressors. We can build this file with the script 'create_tsv.py', that takes the behavior files of the speified subjects in '/archive/albamrt/MRI/behaviour/', converts them to .tsv format and saves them in '/archive/albamrt/NMDA/MRI/BIDS/'.
 
 ## GLM
-For the GLM we have adapted the code in https://github.com/poldracklab/ds003-post-fMRIPrep-analysis. The adapted scripts are in 'ds003-post-fMRIPrep-analysis-master'.
+For the GLM we have adapted the code in https://github.com/poldracklab/ds003-post-fMRIPrep-analysis. The adapted scripts are in the folder 'ds003-post-fMRIPrep-analysis-master'. There are three steps:
+* First level: Running the GLM for each of the two runs of the task for each subject and session. We just need to modify some parameters in the script 'run.py'. For example, to run it for participant C20, session 1 we would just set:
+```
+    analysis_level = 'first',
+    participant_label = ['C20'],
+    group = '*',
+    session = '1', 
+```
+* Second level: The second level averages the results of the first level so that we end up having results for each subject and session and not on the run level anymore. To run the second level for subject C20, session1 we would just have to modify the script 'run.py' again to:
+```
+    analysis_level = 'second',
+    participant_label = ['C20'],
+    group = '*',
+    session = '1', 
+```
+* Third level: Finally, the third level averages our second level files to obtain group contrasts. To do so we just need to modify the run.py file again. So, for example, if we wanted to average the files from the first session of subjects C20, C21, C22 we would do:
+```
+    analysis_level = 'third',
+    participant_label = ['C20', 'C21', 'C22'],
+    group = 'C',
+    session = '1', 
+```
+Another option is just to set the participant label to all the target participants and then filter by the group one is interested in. Taht would be:
+```
+    analysis_level = 'third',
+    participant_label = ['C06', 'C07', 'C08', 'C09', 'C10', 'C11', 'C12', 'C13', 
+        'C14', 'C15', 'C16', 'C17', 'C18', 'C19', 'C20', 'C21', 
+        'C22', 'C23', 'C25',
+        'E07', 'E11', 'E12', 'E13', 'E14', 'E16', 'E18', 
+        'E20', 'E21', 'E22', 'E24', 'E25',
+        'E30', 'E31',
+        'S02', 'S04', 'S05', 'S06', 'S08', 'S11',
+        'S12', 'S13', 'S16', 'S17', 'S18', 'S21',
+        'S22', 'S23', 'S24', 'S25'],
+    group = 'C',
+    session = '1', 
+```
