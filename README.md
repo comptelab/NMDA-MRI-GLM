@@ -1,7 +1,7 @@
 # Instructions of usage
 
 ## Preprocessing
-In order to build our GLM we first need to preprocess the MRI files. To do so we use [fMRIPrep](https://fmriprep.org/en/stable/). More instructions on how to install the needed software, prepare files & run fmriprep [here](https://docs.google.com/document/d/1L1_kZFeQnlUSomfed6QUyLGLpRdGokajbXyriOP5m_Y/edit?usp=sharing).
+In order to build our GLM we first need to preprocess the MRI files. To do so we use [fMRIPrep](https://fmriprep.org/en/stable/). More instructions on how to install the needed software, prepare files & run fmriprep [here](https://docs.google.com/document/d/1L1_kZFeQnlUSomfed6QUyLGLpRdGokajbXyriOP5m_Y/edit?usp=sharing) or in the file 'InstallationAndUsage'.
 * Before using fmriprep we need to convert our raw DCM files (/archive/hstein/RawData/RawMRI) to BIDS format (/archive/albamrt/MRI/BIDS). To do so we use [dcm2bids](https://github.com/UNFmontreal/Dcm2Bids). 
 0. Before using it, delete sbref volumes, leaving just one of them. To do so, if there is a folder in the DCM files with 10 files, just delete all of them but the first.
 1. After installing it according to the [instructions](https://docs.google.com/document/d/1L1_kZFeQnlUSomfed6QUyLGLpRdGokajbXyriOP5m_Y/edit?usp=sharing), open the console and go to the directory where you want to export the BIDS files and type: 
