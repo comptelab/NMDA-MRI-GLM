@@ -30,4 +30,4 @@ docker run --rm -it -e DOCKER_VERSION_8395080871=18.09.2 -v /storage/albamrt/NMD
 In order to run the GLM we need a .tsv file with the regressors. We can build this file with the script 'create_tsv.py', that takes the behavior files of the speified subjects in '/archive/albamrt/MRI/behaviour/', converts them to .tsv format and saves them in '/archive/albamrt/NMDA/MRI/BIDS/'.
 
 ## GLM
-In order to run the GLM 
+For the GLM we have adapted the code in https://github.com/poldracklab/ds003-post-fMRIPrep-analysis. The adapted scripts are in 'ds003-post-fMRIPrep-analysis-master'.
